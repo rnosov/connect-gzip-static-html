@@ -1,4 +1,4 @@
-[![NPM version](https://img.shields.io/npm/v/connect-gzip-static.svg)](https://www.npmjs.org/package/connect-gzip-static-html)
+[![NPM version](https://img.shields.io/npm/v/connect-gzip-static-html.svg)](https://www.npmjs.org/package/connect-gzip-static-html)
 
 # connect-gzip-static-html
 
