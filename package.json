@@ -1,14 +1,14 @@
 {
-  "name": "connect-gzip-static",
-  "version": "0.3.1",
-  "description": "gzip static middleware for connect - serves compressed files if they exist, falls through to connect-static if they don't",
+  "name": "connect-gzip-static-html",
+  "version": "0.0.1",
+  "description": "gzip static middleware for connect with the default .html extension - serves compressed files if they exist, falls through to connect-static if they don't. Forked from connect-gzip-static ( https://github.com/code42day/connect-gzip-static )",
   "main": "index.js",
   "scripts": {
     "test": "make lint test"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:code42day/connect-gzip-static.git"
+    "url": "git@github.com:rnosov/connect-gzip-static-html.git"
   },
   "keywords": [
     "connect",
@@ -16,10 +16,10 @@
     "gzip",
     "compress"
   ],
-  "author": "Damian Krzeminski <pirxpilot@code42day.com>",
+  "author": "Roman Nosov <roman@infovite.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/code42day/connect-gzip-static/issues"
+    "url": "https://github.com/rnosov/connect-gzip-static-html/issues"
   },
   "dependencies": {
     "debug": "~0",

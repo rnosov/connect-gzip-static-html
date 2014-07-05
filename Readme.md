@@ -1,19 +1,19 @@
-[![Build Status](https://img.shields.io/travis/code42day/connect-gzip-static.svg)](http://travis-ci.org/code42day/connect-gzip-static)
-[![Dependency Status](https://img.shields.io/gemnasium/code42day/connect-gzip-static.svg)](https://gemnasium.com/code42day/connect-gzip-static)
-[![NPM version](https://img.shields.io/npm/v/connect-gzip-static.svg)](https://www.npmjs.org/package/connect-gzip-static)
+[![NPM version](https://img.shields.io/npm/v/connect-gzip-static.svg)](https://www.npmjs.org/package/connect-gzip-static-html)
 
-# connect-gzip-static
+# connect-gzip-static-html
+
+This middleware is identical to the connect-gzip-static except for the fact that will also serve .html files without extension. For example, if `/about.html` you can use `/about` to serve it. It will serve gzipped version if `/about.html.gz` is present.
 
 Middleware for [connect][]: serves compressed files if they exist, falls through to connect-static
 if they don't, or if browser does not send 'Accept-Encoding' header.
 
-You should use `connect-gzip-static` if your build process already creates gzipped files. If you
+You should use `connect-gzip-static-html` if your build process already creates gzipped files. If you
 want to gzip your data on the fly use built-in [connect compress][] middleware. And if you want to
 gzip your files dynamically you may want to look up [connect gzip][].
 
 ## Installation
 
-	  $ npm install connect-gzip-static
+	  $ npm install connect-gzip-static-html
 
 ## Options
 
@@ -24,7 +24,7 @@ options as you would with [connect static][].
 ## Usage
 
 ```javascript
-var gzipStatic = require('connect-gzip-static');
+var gzipStatic = require('connect-gzip-static-html');
 var oneDay = 86400000;
 
 connect()
@@ -50,3 +50,4 @@ MIT
 [connect static]: http://www.senchalabs.org/connect/static.html
 [connect compress]: http://www.senchalabs.org/connect/compress.html
 [connect gzip]: https://github.com/tikonen/connect-gzip
+[connect gzip static]: https://github.com/code42day/connect-gzip-static
